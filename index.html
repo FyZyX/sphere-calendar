@@ -13,9 +13,74 @@
 	<body>
 		<div id="range-overlay">
 			<div id="range-menu">
-				<span>Strart: <input type="text"></span>
-				<span>End: <input type="text"></span>
-				<input type="button" value="Submit">
+				<span id="range-start">
+					<spa>Strart</spa>
+					<div class="date-selector">
+						<select name="day">
+							<option value="sun">Sunday</option>
+							<option value="mon">Monday</option>
+							<option value="tue">Tuesday</option>
+							<option value="wed">Wednesday</option>
+							<option value="thu">Thursday</option>
+							<option value="fri">Friday</option>
+							<option value="sat">Saturday</option>
+						</select>
+						<select name="time">
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+							<option value="8">8</option>
+							<option value="9">9</option>
+							<option value="10">10</option>
+							<option value="11">11</option>
+							<option value="12">12</option>
+						</select>
+						<select name="am-pm">
+							<option value="am">am</option>
+							<option value="pm">pm</option>
+						</select>
+					</div>
+				</span>
+				<span id="range-end">
+					<span>End</span>
+					<div class="date-selector">
+						<select name="day">
+							<option value="sun">Sunday</option>
+							<option value="mon">Monday</option>
+							<option value="tue">Tuesday</option>
+							<option value="wed">Wednesday</option>
+							<option value="thu">Thursday</option>
+							<option value="fri">Friday</option>
+							<option value="sat">Saturday</option>
+						</select>
+						<select name="time">
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+							<option value="8">8</option>
+							<option value="9">9</option>
+							<option value="10">10</option>
+							<option value="11">11</option>
+							<option value="12">12</option>
+						</select>
+						<select name="am-pm">
+							<option value="am">am</option>
+							<option value="pm">pm</option>
+						</select>
+					</div>
+				</span>
+				<span>
+					<input id="range-cancel" type="button" value="Cancel">
+					<input id="range-select" type="button" value="Select">
+				</span>
 			</div>
 		</div>
 		<header class="nav-height">
