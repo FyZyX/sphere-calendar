@@ -15,9 +15,9 @@
 	$.fn.shiftcheckbox = function(opts) {
 		opts = $.extend({
 			checkboxSelector : null,
-			selectAll				: null,
-			onChange				 : null,
-			ignoreClick			: null
+			selectAll		 : null,
+			onChange		 : null,
+			ignoreClick		 : null
 		}, opts);
 
 		if (typeof opts.onChange != 'function') {
@@ -31,12 +31,12 @@
 		}
 
 		var $containers,
-				$checkboxes,
-				$containersSelectAll,
-				$checkboxesSelectAll,
-				$otherSelectAll,
-				$containersAll,
-				$checkboxesAll;
+			$checkboxes,
+			$containersSelectAll,
+			$checkboxesSelectAll,
+			$otherSelectAll,
+			$containersAll,
+			$checkboxesAll;
 
 		if (opts.selectAll) {
 			// We need to set up a "select all" control
@@ -207,8 +207,8 @@ $(function() {
 		// elements.
 
 		checkboxSelector : ':checkbox',
-		selectAll				: $('.day .all'),
-		ignoreClick			: 'a',
+		selectAll		 : $('.day .all'),
+		ignoreClick		 : 'a',
 
 		// The onChange function will be called whenever the
 		// plugin changes the state of a checkbox.

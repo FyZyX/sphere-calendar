@@ -1,9 +1,13 @@
 $(function () {
 	'use strict';
-	$('.time').on('touchstart', function () {
-		$('#range-overlay').css({'display': 'initial'});
-	});
-	$('#range-menu input[type=button]').click(function () {
-		$('#range-overlay').css({'display': 'none'});
-	});
+	
+	if (!("ontouchstart" in document.documentElement)) {
+		$('.time').on('click', function () {
+			$('#range-overlay').css({'display': 'flex'});
+		});
+
+		$('#range-cancel').click(function () {
+			$('#range-overlay').css({'display': 'none'});
+		});
+	}
 });
