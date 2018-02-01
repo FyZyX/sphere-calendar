@@ -8,10 +8,18 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0001">
 		<link rel="icon" type="image/png" href="/images/icon.png"/>
 		<link href="style/screen.css" rel="stylesheet" type="text/css" media="screen"/>
+		<link href="style/selectcheckboxes.css" rel="stylesheet" type="text/css" media="screen"/>
 	</head>
 	<body>
+		<div id="range-overlay">
+			<div id="range-menu">
+				<span>Strart: <input type="text"></span>
+				<span>End: <input type="text"></span>
+				<input type="button" value="Submit">
+			</div>
+		</div>
 		<header class="nav-height">
-			<h1 id="logo">Sphere</h1>
+  			<h1 id="logo">Sphere</h1>
 			<nav id="top">
 				<label for="show-menu" class="show-menu">Show menu</label>
 				<input type="checkbox" id="show-menu" value="button">
@@ -1103,5 +1111,6 @@
 		<script type="text/javascript" src="js/no-touch.js"></script> 
 		<script type="text/javascript" src="js/shiftcheckbox.js"></script>
 		<script type="text/javascript" src="js/dragcheckbox.js"></script>
+		<script type="text/javascript" src="js/selectcheckboxes.js"></script>
 	</body>
 </html>
