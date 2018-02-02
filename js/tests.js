@@ -100,8 +100,7 @@ QUnit.test("test add half-hour", function(assert) {
 	assert.deepEqual(this.date, newDate);
 });
 
-interpolateTimes
-QUnit.test("test add half-hour", function(assert) {
+QUnit.test("test interpolate times", function(assert) {
 	var endTime = new Date();
 	endTime.setFullYear(2018, 6, 29);
 	endTime.setHours(1);
