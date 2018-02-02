@@ -3,10 +3,9 @@ var days = ['sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat'];
 /* ====== BEGIN DOCUMENT READY FUNCTION ====== */
 
 $(function() {
-	if (isTouchDevice()) {
+	if (true) { // isTouchDevice()
 		// show range selection menu when a time slot is clicked
-		$('.time').on('click', function () {
-			console.log("mouse click");
+		$('.time').click(function () {
 			// extract the id from the slected element and convert it to a Date object
 			var id = this.children[0].id;
 			var time = idToDate(id);
@@ -30,6 +29,7 @@ $(function() {
 			hideMenu();
 		});
 
+		// click select button
 		$('#range-select').click(function () {
 			deselectInitialSlot();
 			

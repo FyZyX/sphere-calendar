@@ -1,6 +1,11 @@
+/* cover screen with overlay to prevent futher selection */
 #range-overlay {
 	display: none;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
 	position: fixed;
 	z-index: 99;
@@ -12,41 +17,65 @@
 }
 
 #range-menu {
+	/* center items in container */
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
 	flex-direction: column;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
+	-ms-flex-pack: distribute;
 	justify-content: space-around;
+	
+	/* make sure menu is clickable */
 	z-index: 100;
+	
+	/* resize and apply simple style */
 	height: 60%;
 	width: 60%;
 	background-color: whitesmoke;
 	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
 }
 
+/* style flexible rows in menu */
 #range-menu span {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
 	justify-content: space-between;
 	width: 90%;
 	text-transform: uppercase;
 }
 
-#range-menu span div {
+.date-selector {
+	/* center items in container */
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
-	justify-content: space-between;
-}
-
-#range-menu span div {
-	display: flex;
-	align-items: center;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
 	justify-content: space-between;
 }
 
 .date-selector select {
+	/* remove default styles */
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+	
+	/* apply custom styles */
 	background: ghostwhite;
 	border: 2px solid #AEADD4;
 	padding: 5px;
@@ -54,19 +83,25 @@
 }
 
 .date-selector select[name=time] {
+	/* add space between weekday and time */
 	margin-left: 15px;
 }
 
 #range-menu > span:last-of-type {
+	/* position cancel/select buttons */
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-ms-flex-pack: distribute;
 	justify-content: space-around;
 }
 
+/* style cancel/select buttons */
 input[id^='range-'] {
 	background: #448;
 	color: ghostwhite;
 	border: none;
 	font-size: 1em;
 	text-transform: uppercase;
-	padding: 5px;
+	padding: 5px 10px;
 }
