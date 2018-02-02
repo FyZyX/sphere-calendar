@@ -3,7 +3,7 @@ var days = ['sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat'];
 /* ====== BEGIN DOCUMENT READY FUNCTION ====== */
 
 $(function() {
-	if (true) { // isTouchDevice()
+	if (isTouchDevice()) {
 		// show range selection menu when a time slot is clicked
 		$('.time').click(function () {
 			// extract the id from the slected element and convert it to a Date object
