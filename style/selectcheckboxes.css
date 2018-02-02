@@ -18,8 +18,9 @@
 	justify-content: space-around;
 	z-index: 100;
 	height: 60%;
-	width: 50%;
+	width: 60%;
 	background-color: whitesmoke;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
 }
 
 #range-menu span {
@@ -27,10 +28,45 @@
 	align-items: center;
 	justify-content: space-between;
 	width: 90%;
+	text-transform: uppercase;
 }
 
 #range-menu span div {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+}
+
+#range-menu span div {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.date-selector select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+	background: ghostwhite;
+	border: 2px solid #AEADD4;
+	padding: 5px;
+	margin-left: 5px;
+}
+
+.date-selector select[name=time] {
+	margin-left: 15px;
+}
+
+#range-menu > span:last-of-type {
+	display: flex;
+	justify-content: space-around;
+}
+
+input[id^='range-'] {
+	background: #448;
+	color: ghostwhite;
+	border: none;
+	font-size: 1em;
+	text-transform: uppercase;
+	padding: 5px;
 }
