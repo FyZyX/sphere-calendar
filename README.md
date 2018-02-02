@@ -59,7 +59,10 @@ I've done my best to adhere to conventions used throughout the exiting code base
 
 Because this is such a small project, I've left my functions in the global score (similar to `shiftcheckbox.js`) and ensured there no namespace collisions. Many of these functions perform simple utility or conversion operations, and even if they are only used once, they assist with clarifying logic and grouping similar functionality.
 
-## Test
+Note that I chose to put my code in separate files not because it is logically separate, but because I want it to be easy to distinguish what I've written. Any minor changes I've made to the existing code base are thoroughly documented here.
 
+## Testing
+_To see the results of the unit tests see `tests.html` or visit this [link](http://www.lucaslofaro.com/sphere-calendar/tests.html)_
+_Unit tests can be found in `js/selectcheckboxs.js`_
 
-
+For completeness, I've included my testing suite, which covers all conversion operations and the crucial utility operations. These tests help ensure core functionality is maintained throughout updates to the code. Although UI tests are not included, the important logic is being tested and further testing would be unnecessary for the scale of this project.
